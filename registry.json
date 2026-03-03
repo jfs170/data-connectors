@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "lastUpdated": "2026-02-27T00:00:00Z",
+  "lastUpdated": "2026-03-03T00:00:00Z",
   "baseUrl": "https://raw.githubusercontent.com/vana-com/data-connectors/main",
   "connectors": [
     {
@@ -106,6 +106,21 @@
       "checksums": {
         "script": "sha256:ecb31dd5c1ae1d9ff37895644ac453a90bc15f3e9c598e648388b3932094a34f",
         "metadata": "sha256:e0d1161c4186ea9106ac2ef0fd76b4076646b1edd597ac39812ea79d2a3fe6a8"
+      }
+    },
+    {
+      "id": "oura-playwright",
+      "company": "oura",
+      "version": "1.0.0",
+      "name": "Oura Ring",
+      "description": "Exports your Oura Ring readiness scores, sleep data, and daily activity using Playwright browser automation.",
+      "files": {
+        "script": "oura/oura-playwright.js",
+        "metadata": "oura/oura-playwright.json"
+      },
+      "checksums": {
+        "script": "sha256:d98a7b9bcb85a871fbc5164c34ac36369f1b7745f90bd97ae5f02c880ccacab6",
+        "metadata": "sha256:d3ff5230a6ebe6ff3f655546d834e7ed59f741febdc540dd2f89894b6e5baa7a"
       }
     }
   ]
