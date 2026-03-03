@@ -1,0 +1,31 @@
+{
+  "id": "oura-playwright",
+  "version": "1.0.0",
+  "name": "Oura Ring",
+  "company": "Oura",
+  "description": "Exports your Oura Ring readiness scores, sleep data, and daily activity using Playwright browser automation.",
+  "connectURL": "https://cloud.ouraring.com/",
+  "connectSelector": "a[href*='readiness'], a[href*='sleep'], [class*='dashboard'], [class*='Dashboard']",
+  "exportFrequency": "daily",
+  "runtime": "playwright",
+  "scopes": [
+    {
+      "scope": "oura.readiness",
+      "label": "Your daily readiness scores",
+      "description": "Daily readiness scores and contributing factors like HRV balance, resting heart rate, recovery, and body temperature"
+    },
+    {
+      "scope": "oura.sleep",
+      "label": "Your sleep data",
+      "description": "Daily sleep scores with contributor breakdowns and detailed sleep period data including duration, stages, heart rate, and HRV"
+    },
+    {
+      "scope": "oura.activity",
+      "label": "Your daily activity",
+      "description": "Daily activity scores, step counts, calorie burn, and activity level breakdowns"
+    }
+  ],
+  "vectorize_config": {
+    "documents": "readiness"
+  }
+}
